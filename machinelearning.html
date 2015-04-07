@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+
+<html lang="en-US">
+
+	<head>
+		<meta charset="UTF-8"><title>Machine Learning</title>
+		<link rel="stylesheet" href="css/style.css" media="all" />
+		<link rel="stylesheet" media="all" href="css/folks.css" />
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/ie7.css" media="all" />
+		<![endif]-->
+		<script src="script/js/jquery-1.5.min.js"></script>
+		<script src="script/js/ddsmoothmenu.js"></script>
+		<script>
+			$(document).ready(
+				function() {
+					//Hide the tooglebox when page load
+					$(".togglebox").hide();
+					$("#show").show();
+					//slide up and down when click over heading 2
+					$("h2").click(
+						function() {
+							// slide toggle effect set to slow you can set it to fast too.
+							$(this).toggleClass("active").next(".togglebox").slideToggle("slow");
+							return true;
+						}
+					);
+				}
+			);
+		</script>
+		<style type="text/css">
+			.cs_featuredTabItem { color: #999; font-size: 18px; padding-top: 20px; padding-bottom: 20px; margin: 0; background: url("images/slotbg.png") no-repeat center bottom; float: right; text-align: left; -webkit-font-smoothing: antialiased; line-height: 1.5rem; width: 85%; }
+			.cs_featuredTabItem h2 { width: 55%; font-size: 20px; margin: 0 0 10px 0; line-height: 100%; }
+			.cs_featuredTabItem .cs_featureBody { width: 55%; font-size: 12px; line-height: 1.4rem; }
+			.cs_featuredTabItem img { float: left; width: auto; margin: auto 0; }
+			.cs_featuredTabItem.first { width: 90%; float: left; }
+			.cs_featuredTabItem.first img { float: right; }
+			.cs_featuredTabItem.first h2 { margin: 0 0 20px 0; font-size: 20px; line-height: 100%; }
+			.cs_featuredTabItem.odd img { float: right; }
+			.cs_featuredTabItem.even h2 { float: right; }
+			.cs_featuredTabItem.even .cs_featureBody { float: right; }
+			.cs_featuredTabItem.even.last { background: none; }
+		</style>
+	</head>
+	
+	<body>
+		<div id="container"> 
+			<!-- Begin Header Wrapper -->
+			<div id="page-top">
+				<div id="header-wrapper">
+					<!-- Begin Header -->
+					<div id="header">
+						<!-- Begin Menu -->
+						<div id="menu-wrapper">
+							<div id="smoothmenu1" class="ddsmoothmenu">
+								<ul>
+									<li><a href=# class="selected">Home</a>
+								</ul>
+							</div>
+						</div>
+						<!-- End Menu --> 
+					</div>
+					<!-- End Header --> 
+				</div>
+			</div>
+			<!-- End Header Wrapper -->
+			<!-- Begin Wrapper -->
+			<div id="wrapper">
+				<div class="content">
+					<div class="tabbed-content">
+						<div class="toggle">
+							<h2 class="trigger"><b>Machine Learning</b></h2>
+							<div class="togglebox" id="show">
+								<div>
+									<!-- Features -->
+									<div class="cs_featuredTabItem first">
+										<p align="center">
+											<img src="ml1.png" alt="Machine Learning" width="400" height="80">
+										</p>
+									</div>
+									<div class="cs_featuredTabItem odd">
+										<!--<img style="padding-top: inherit;" src="inputdata.png" height="135" width="140">-->
+										<h2>Input: Data</h2>
+										<div class="cs_featureBody">
+											One needs to specify three critical components: the form of training data available as input; the form of model desired as output; the performance measure or evaluation criterion that will be used to evaluate the model.
+										</div>
+									</div>
+									<div class="cs_featuredTabItem even">
+										<!--<img style="padding-top: inherit;" src="learningalgorithm.jpg" height="135" width="140">-->
+										<h2>Learning Algorithm</h2>
+										<div class="cs_featureBody">
+											The form and content of the data available will give us an idea of choosing which learning algorithms, while the form of model desired limits our choices.
+										</div>
+									</div>
+									<div class="cs_featuredTabItem odd">
+										<!--<img style="padding-top: inherit;" src="outputmodel.jpg" height="135" width="140">-->
+										<h2>Output: Model</h2>
+										<div class="cs_featureBody">
+											Statistical tests can be performed to rule out inappropriate algorithms. Once we have picked our candidate algorithms, the evaluation criteria is used to select our final model.
+										</div>
+									</div>				
+									<div class="cs_featuredTabItem even">
+										<!--<img style="padding-top: inherit;" src="solution.jpg" height="135" width="140">-->
+										<h2>A solution</h2>
+										<div class="cs_featureBody">
+											A solution to the problem is then any learning algorithm that takes the specified form of data as input and produces the specified form of model as output.
+										</div>
+									</div>
+									<!--  End of Features -->
+								</div>
+							</div>
+						</div>
+						<div class="toggle">
+							<h2 class="trigger"><b>Supervised Learning</b></h2>
+							<div class="togglebox">
+								<div>
+									<!-- Features -->
+									<div class="cs_featuredTabItem first">
+										<p align="center">
+											<img src="ml2.png" alt="Supervised Learning" width="500" height="100">
+										</p>
+									</div>
+									<div class="cs_featuredTabItem odd">
+										<!--<img style="padding-top: inherit;" src="inputdata.png" height="135" width="140">-->
+										<h2>Input: Labeled Data</h2>
+										<div class="cs_featureBody">
+											Supervised learning is the machine learning task of inferring a function from labeled training data. The training data consist of a set of training examples. Each example is a pair consisting of an input object (typically a vector) and a desired output value.
+										</div>
+									</div>
+									<div class="cs_featuredTabItem even">
+										<!--<img style="padding-top: inherit;" src="learningalgorithm.jpg" height="135" width="140">-->
+										<h2>Types: Regression &amp; Classification</h2>
+										<div class="cs_featureBody">
+											Regression takes continuous input; Classification takes categorical input.
+										</div>
+									</div>
+									<div class="cs_featuredTabItem odd">
+										<!--<img style="padding-top: inherit;" src="outputmodel.jpg" height="135" width="140">-->
+										<h2>Output: Inferred Function</h2>
+										<div class="cs_featureBody">
+											A supervised learning algorithm analyzes the training data and produces an inferred function, which can be used for mapping new examples. This is <b>Predictive Analytics</b>!
+										</div>
+									</div>				
+									<div class="cs_featuredTabItem even">
+										<!--<img style="padding-top: inherit;" src="solution.jpg" height="135" width="140">-->
+										<h2>An Optimal Solution</h2>
+										<div class="cs_featureBody">
+											An optimal scenario will allow for the algorithm to correctly determine the class labels for unseen instances. This requires the learning algorithm to generalize from the training data to unseen situations in a "reasonable" way.
+										</div>
+									</div>
+									<!--  End of Features -->
+								</div>
+							</div>
+						</div>
+						<div class="toggle">
+							<h2 class="trigger"><b>Unsupervised Learning</b></h2>
+							<div class="togglebox">
+								<div>
+									<!-- Features -->
+									<div class="cs_featuredTabItem first">
+										<p align="center">
+											<img src="ml3.png" alt="Supervised Learning" width="600" height="120">
+										</p>
+									</div>
+									<div class="cs_featuredTabItem odd">
+										<!--<img style="padding-top: inherit;" src="inputdata.png" height="135" width="140">-->
+										<h2>Input: Unlabeled Data</h2>
+										<div class="cs_featureBody">
+											In machine learning, the problem of unsupervised learning is that of trying to find hidden structure in unlabeled data.
+										</div>
+									</div>
+									<div class="cs_featuredTabItem even">
+										<img style="padding-top: inherit;" src="usl.png" height="135" width="140">
+										<h2>Types</h2>
+										<div class="cs_featureBody">
+											<ul>
+												<li>
+													Clustering
+													<ul>
+														<li>K-Means</li>
+														<li>Mixture Models</li>
+														<li>Hierarchical Clustering</li>
+													</ul>
+												</li>
+												<li>
+													Dimension Reduction
+													<ul>
+														<li>Principle Component Analysis</li>
+														<li>Independent Component Analysis</li>
+														<li>Non-negative Matrix Factorization</li>
+													</ul>
+												</li>
+												<li>Association Rules</li>
+												<li>Google PageRank Algorithm</li>
+												<li>Recommender System</li>
+											</ul>
+										</div>
+									</div>
+									<!--  End of Features -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br />
+				<br />
+			</div>
+			<!-- End Wrapper -->
+			<div class="clearfix"></div>
+			<div class="push"></div>
+		</div>
+		<!-- Begin Footer -->
+		<div id="footer-wrapper">
+			<div id="footer">
+				<div id="footer-content"> 
+					<!-- Begin Copyright -->
+					<div id="copyright">
+						<p>© Copyright 2014 Wei Yang<br></p>
+					</div>
+					<!-- End Copyright --> 
+				</div>
+			</div>
+		</div>
+		<!-- End Footer -->
+	</body>
+
+</html>
