@@ -29,6 +29,7 @@
 			);
 		</script>
 		<style type="text/css">
+
 			.cs_featuredTabItem { color: #999; font-size: 18px; padding-top: 20px; padding-bottom: 20px; margin: 0; background: url("images/slotbg.png") no-repeat center bottom; float: right; text-align: left; -webkit-font-smoothing: antialiased; line-height: 1.5rem; width: 85%; }
 			.cs_featuredTabItem h2 { width: 55%; font-size: 20px; margin: 0 0 10px 0; line-height: 100%; }
 			.cs_featuredTabItem .cs_featureBody { width: 55%; font-size: 12px; line-height: 1.4rem; }
@@ -37,6 +38,7 @@
 			.cs_featuredTabItem.first img { float: right; }
 			.cs_featuredTabItem.first h2 { margin: 0 0 20px 0; font-size: 20px; line-height: 100%; }
 			.cs_featuredTabItem.odd img { float: right; }
+			.cs_featuredTabItem.odd .cs_featureBody { float: right; }
 			.cs_featuredTabItem.even h2 { float: right; }
 			.cs_featuredTabItem.even .cs_featureBody { float: right; }
 			.cs_featuredTabItem.even.last { background: none; }
@@ -55,8 +57,14 @@
 							<div id="smoothmenu1" class="ddsmoothmenu">
 								<ul>
 									<li><a href=# class="selected">Home</a>
+                                                                        </li>
+									<li><a href=# class="selected">Contact</a>
+                                                                        </li>
+									<li><a href=# class="selected">Demo</a>
+                                                                        </li>
 								</ul>
 							</div>
+
 						</div>
 						<!-- End Menu --> 
 					</div>
@@ -79,28 +87,28 @@
 										</p>
 									</div>
 									<div class="cs_featuredTabItem odd">
-										<!--<img style="padding-top: inherit;" src="inputdata.png" height="135" width="140">-->
-										<h2>Input: Data</h2>
+										<img style="padding-top: inherit;" src="inputdata.png" height="135" width="140">
+										<h2>Input - Data</h2>
 										<div class="cs_featureBody">
 											One needs to specify three critical components: the form of training data available as input; the form of model desired as output; the performance measure or evaluation criterion that will be used to evaluate the model.
 										</div>
 									</div>
 									<div class="cs_featuredTabItem even">
-										<!--<img style="padding-top: inherit;" src="learningalgorithm.jpg" height="135" width="140">-->
+										<img style="padding-top: inherit;" src="learningalgorithm.jpg" height="135" width="140">
 										<h2>Learning Algorithm</h2>
 										<div class="cs_featureBody">
 											The form and content of the data available will give us an idea of choosing which learning algorithms, while the form of model desired limits our choices.
 										</div>
 									</div>
 									<div class="cs_featuredTabItem odd">
-										<!--<img style="padding-top: inherit;" src="outputmodel.jpg" height="135" width="140">-->
-										<h2>Output: Model</h2>
+										<img style="padding-top: inherit;" src="outputmodel.jpg" height="135" width="140">
+										<h2>Output - Model</h2>
 										<div class="cs_featureBody">
 											Statistical tests can be performed to rule out inappropriate algorithms. Once we have picked our candidate algorithms, the evaluation criteria is used to select our final model.
 										</div>
 									</div>				
 									<div class="cs_featuredTabItem even">
-										<!--<img style="padding-top: inherit;" src="solution.jpg" height="135" width="140">-->
+										<img style="padding-top: inherit;" src="solution.jpg" height="135" width="140">
 										<h2>A solution</h2>
 										<div class="cs_featureBody">
 											A solution to the problem is then any learning algorithm that takes the specified form of data as input and produces the specified form of model as output.
@@ -121,28 +129,28 @@
 										</p>
 									</div>
 									<div class="cs_featuredTabItem odd">
-										<!--<img style="padding-top: inherit;" src="inputdata.png" height="135" width="140">-->
-										<h2>Input: Labeled Data</h2>
+										<img style="padding-top: inherit;" src="images/stage1.png" height="135" width="140">
+										<h2>Input - Labeled Data</h2>
 										<div class="cs_featureBody">
 											Supervised learning is the machine learning task of inferring a function from labeled training data. The training data consist of a set of training examples. Each example is a pair consisting of an input object (typically a vector) and a desired output value.
 										</div>
 									</div>
 									<div class="cs_featuredTabItem even">
-										<!--<img style="padding-top: inherit;" src="learningalgorithm.jpg" height="135" width="140">-->
-										<h2>Types: Regression &amp; Classification</h2>
+									        <img style="padding-top: inherit;" src="images/stage2.png" height="135" width="200">
+										<h2>Types - Regression &amp; Classification</h2>
 										<div class="cs_featureBody">
 											Regression takes continuous input; Classification takes categorical input.
 										</div>
 									</div>
 									<div class="cs_featuredTabItem odd">
-										<!--<img style="padding-top: inherit;" src="outputmodel.jpg" height="135" width="140">-->
-										<h2>Output: Inferred Function</h2>
+										<img style="padding-top: inherit;" src="images/stage3.png" height="135" width="200">
+										<h2>Output - Inferred Function</h2>
 										<div class="cs_featureBody">
 											A supervised learning algorithm analyzes the training data and produces an inferred function, which can be used for mapping new examples. This is <b>Predictive Analytics</b>!
 										</div>
 									</div>				
 									<div class="cs_featuredTabItem even">
-										<!--<img style="padding-top: inherit;" src="solution.jpg" height="135" width="140">-->
+										<img style="padding-top: inherit; opacity: 0.75" src="images/saama-solution.jpg" height="135" width="140">
 										<h2>An Optimal Solution</h2>
 										<div class="cs_featureBody">
 											An optimal scenario will allow for the algorithm to correctly determine the class labels for unseen instances. This requires the learning algorithm to generalize from the training data to unseen situations in a "reasonable" way.
@@ -159,44 +167,54 @@
 									<!-- Features -->
 									<div class="cs_featuredTabItem first">
 										<p align="center">
-											<img src="ml3.png" alt="Supervised Learning" width="600" height="120">
+											<img src="ml3.png;" alt="Supervised Learning" width="600" height="120">
 										</p>
 									</div>
-									<div class="cs_featuredTabItem odd">
-										<!--<img style="padding-top: inherit;" src="inputdata.png" height="135" width="140">-->
+									<!--<div class="cs_featuredTabItem odd">
+										<img style="padding-top: inherit;" src="images/cover.png" height="135" width="140">
 										<h2>Input: Unlabeled Data</h2>
 										<div class="cs_featureBody">
 											In machine learning, the problem of unsupervised learning is that of trying to find hidden structure in unlabeled data.
 										</div>
-									</div>
+                                                                        </div>-->
+
 									<div class="cs_featuredTabItem even">
-										<img style="padding-top: inherit;" src="usl.png" height="135" width="140">
-										<h2>Types</h2>
+                                                                                <img style="padding-top: inherit;" src="images/ascend-loop.jpg" height="135" width="140">
+                                                                                <h2>Clustering<h2>
 										<div class="cs_featureBody">
-											<ul>
-												<li>
-													Clustering
-													<ul>
-														<li>K-Means</li>
-														<li>Mixture Models</li>
-														<li>Hierarchical Clustering</li>
-													</ul>
-												</li>
-												<li>
-													Dimension Reduction
-													<ul>
-														<li>Principle Component Analysis</li>
-														<li>Independent Component Analysis</li>
-														<li>Non-negative Matrix Factorization</li>
-													</ul>
-												</li>
-												<li>Association Rules</li>
-												<li>Google PageRank Algorithm</li>
-												<li>Recommender System</li>
-											</ul>
+										    <ul>
+											<li>K-Means</li>
+											<li>Mixture Models</li>
+											<li>Hierarchical Clustering</li>
+                                                                                    <ul>
+                                                                                </div>
+                                                                        </div>
+
+                                                                        <div class="cs_featuredTabItem odd">
+                                                                                <img style="padding-top: inherit;" src="images/gravity-defying.jpg" height="150" width="250">
+                                                                                <h2>Dimension Reduction<h2>
+										<div class="cs_featureBody">
+                                                                                    <ul>
+											<li>Principle Component Analysis</li>
+											<li>Independent Component Analysis</li>
+											<li>Non-negative Matrix Factorization</li>
+                                                                                    <ul>
+                                                                                </div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="cs_featuredTabItem even">
+                                                                                <img style="padding-top: inherit;" src="images/drawinghands.jpg" height="150" width="240">
+                                                                                <h2>Customerized Models<h2>
+										<div class="cs_featureBody">
+                                                                                    <ul>
+
+                                                                                        <li>Association Rules</li>
+											<li>Google PageRank Algorithm</li>
+											<li>Recommender System</li>
+										    </ul>
 										</div>
 									</div>
-									<!--  End of Features -->
+                                                                        									<!--  End of Features -->
 								</div>
 							</div>
 						</div>
@@ -209,13 +227,15 @@
 			<div class="clearfix"></div>
 			<div class="push"></div>
 		</div>
+
+
 		<!-- Begin Footer -->
 		<div id="footer-wrapper">
 			<div id="footer">
 				<div id="footer-content"> 
 					<!-- Begin Copyright -->
 					<div id="copyright">
-						<p>© Copyright 2014 Wei Yang<br></p>
+						<p>© Copyright 2015 Wei Yang & Simeng Yan<br></p>
 					</div>
 					<!-- End Copyright --> 
 				</div>

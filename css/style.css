@@ -115,6 +115,9 @@ table {
 body {
 	font-family:"Lucida Grande", "Lucida Sans Unicode", "Trebuchet MS", Helvetica, Arial, sans-serif;
 	background-color: #f0f0f0;
+        min-width: 400px;
+	height: 200px;
+        background: transparent url(../images/cover.png) repeat-y bottom center;*/
 	color: #565656;
 	font-size: 13px;
 	overflow-y: scroll;
