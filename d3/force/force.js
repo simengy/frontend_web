@@ -10,7 +10,7 @@ var vis = d3.select("#chart")
 
 d3.json("force.json", function(json) {
   var force = d3.layout.force()
-      .charge(-100)
+      .charge(-60)
       .linkDistance(30)
       .nodes(json.nodes)
       .links(json.links)
